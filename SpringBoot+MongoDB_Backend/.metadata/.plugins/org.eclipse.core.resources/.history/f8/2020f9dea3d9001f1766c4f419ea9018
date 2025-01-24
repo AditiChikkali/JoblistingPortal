@@ -1,0 +1,17 @@
+package repository;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import model.Post;
+
+@Component
+public class SearchRepositoryImplementation implements SearchRepository {
+	@Override
+	public List<Post> findByText(String text){
+		final List<Post> posts = new ArrayList<>();
+		return posts;
+	}
+
+}
